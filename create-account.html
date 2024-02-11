@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Create your <br> PopX account</h1>
+            <form id="signup-form">
+
+                <div class="create-account-name">
+                    <fieldset>
+                        <legend>Full Name<span class="mandatory">*</span></legend>
+                        <div class="input-field">
+                            <input type="text" id="full-name" name="full-name" placeholder="Marry Doe" >
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="create-account-phone">
+                    <fieldset>
+                        <legend>Phone number<span class="mandatory">*</span></legend>
+                        <div class="input-field">
+                            <input type="text" id="phone-number" name="number" placeholder="Marry Doe" >
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="create-account-Email">
+                    <fieldset>
+                        <legend>Email address<span class="mandatory">*</span></legend>
+                        <div class="input-field">
+                            <input type="text" id="Email-address" name="Email" placeholder="Marry Doe" >
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="create-account-Passward">
+                    <fieldset>
+                        <legend>Passward<span class="mandatory">*</span></legend>
+                        <div class="input-field">
+                            <input type="text" id="Passward" name="Passward" placeholder="Marry Doe" >
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="create-account-company">
+                    <fieldset>
+                        <legend>Company name</legend>
+                        <div class="input-field">
+                            <input type="text" id="company-name" name="company" placeholder="Marry Doe" >
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                <div class="radio-button">
+                    <label for="agency">Are you an Agency?<span class="mandatory">*</span></label>
+                    <div>
+                        <input type="radio" id="activeButton" name="Agency" value="yes" checked>
+                        <label for="activeButton">Yes</label>
+
+                        <input type="radio" id="inactiveButton" name="Agency" value="no">
+                        <label for="inactiveButton">No</label>
+                    </div>
+                </div>
+
+
+
+                <button type="submit" class="btn-create-account"><a href="account-setting.html">Create
+                        Account</button></a>
+            </form>
+            <script>
+                document.getElementById("inactiveButton").disabled = true;
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
